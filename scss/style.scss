@@ -1,0 +1,34 @@
+$color-main: rgba(255, 255, 255, 1);
+$color-secondary: rgba(0, 0, 0, 1);
+$color-pimary: rgba(0, 0, 0, 0.7);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $color-main;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 15%;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  color: $color-secondary;
+  text-transform: uppercase;
+}
+
+p {
+  color: $color-pimary;
+  text-transform: uppercase;
+}
