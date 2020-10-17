@@ -20,5 +20,5 @@ function watch() {
   gulp.watch('./*.html').on('change', browserSync.reload)
 }
 
-exports.style = style
-exports.watch = watch
+exports.serve = gulp.series(style, watch)
+exports.build = style
