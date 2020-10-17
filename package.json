@@ -1,14 +1,27 @@
 {
   "name": "gulp-starter-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Starter Kit For Your Own Templates",
   "main": "index.js",
   "scripts": {
     "serve": "gulp serve",
     "build": "gulp build"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pwndex/gulp-starter-kit.git"
+  },
+  "keywords": [
+    "gulp",
+    "starter",
+    "kit"
+  ],
+  "author": "Amal Greenberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pwndex/gulp-starter-kit/issues"
+  },
+  "homepage": "https://github.com/pwndex/gulp-starter-kit/",
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
