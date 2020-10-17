@@ -1,8 +1,14 @@
+<br>
+<br>
+<p align="center">
+  <img width="150" src="https://user-images.githubusercontent.com/65390434/96335689-c833b180-1093-11eb-8e19-37ee93ef4389.png" />
+</p>
+<br>
+<br>
+<br>
+
 # Gulp Starter Kit
-
-For Your Own HTML, CSS, JS Templates
-
-## Prerequisites
+#### Prerequisites
 
 - [Nodejs](https://nodejs.org/en/)
 - [Gulpjs](https://gulpjs.com/)
