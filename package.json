@@ -44,7 +44,6 @@
     "webpack-stream": "^6.1.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
     "particles.js": "^2.0.0"
   }
 }
