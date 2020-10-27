@@ -1,21 +1,25 @@
 @include('assets/html/header.html')
 
-<div class="container">
-  <div class="content">
+<section class="header-section">
+
+  <div class="header-section__content">
     <img
       src="assets/images/gulp.svg"
       alt=""
+      class="header-section__image"
     />
-    <h1>Starter Kit</h1>
-    <p>For Your Own Templates</p>
+    <h1 class="header-section__title">Starter Kit</h1>
+    <p class="header-section__subtitle">For Your Own Templates</p>
   </div>
-  <ul>
-    <li><a href="https://github.com/pwndex/gulp-starter-kit/" target="_blank">View on GitHub</a></li>
-  </ul>
-  <div class="footer">
-    <p>Made with &hearts; by <a href="https://pwndex.github.io/" target="_blank">pwndex</a></p>
-  </div>
-  <div id="particles-js" class="particlesjs"></div>
-</div>
+
+  <a href="https://github.com/pwndex/gulp-starter-kit/" target="_blank" class="header-section__main-link">View on GitHub</a>
+
+  <p class="header-section__footer">
+    Made with &hearts; by <a href="https://pwndex.github.io/" target="_blank" class="header-section__footer-link">pwndex</a>
+  </p>
+
+</section>
+
+<div id="particles-js" class="particlesjs"></div>
 
 @include('assets/html/footer.html')
