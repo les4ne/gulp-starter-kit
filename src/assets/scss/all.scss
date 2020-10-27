@@ -3,14 +3,15 @@
 @import "components";
 @import "vendor";
 
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
+  height: 100%;
   font-family: 'Montserrat';
   background-color: $color-main;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 .particlesjs {
@@ -23,16 +24,31 @@ body {
 
 .header-section {
   width: 100%;
-  max-width: 500px;
-  min-height: 100vh;
+  height: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
+  &__inner {
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
   &__content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: auto;
   }
 
   &__image {
@@ -53,35 +69,34 @@ body {
     color: $color-pimary;
   }
   &__main-link {
+    display: inline-block;
     font-weight: 400;
     text-decoration: none;
     color: $color-secondary;
     padding: 20px 30px;
-    border: 1px solid transparent;
+    border: 1px solid $color-secondary;
     transition: all 0.2s linear;
     margin: 20px 0;
     z-index: 1;
   }
   &__main-link:hover {
-    border: 1px solid $color-secondary;
     box-shadow: 4px 4px 0 $color-secondary;
   }
 
   &__footer {
     z-index: 1;
-    margin-top: auto;
 
     &-link {
+      display: inline-block;
       color: $color-secondary;
       font-weight: 400;
       text-decoration: none;
       padding: 5px 10px;
-      border: 1px solid transparent;
+      border: 1px solid $color-secondary;
       transition: all 0.2s linear;
     }
 
     &-link:hover {
-      border: 1px solid $color-secondary;
       box-shadow: 4px 4px 0 $color-secondary;
     }
   }
@@ -89,13 +104,11 @@ body {
   @media (max-width: 330px) {
     .header-section {
       &__image {
-        max-width: 80px;
+        max-width: 60px;
       }
-
       &__title {
         font-size: 2.3em;
       }
-
       &__subtitle {
         font-size: 0.8em;
       }
